@@ -1,22 +1,23 @@
 telegram:
-  useFirstNameInsteadOfUsername: false
+  token: 522816031:AAHLE20HCgQq-OmnUEWCnEBLwEtpeO6Tsgw      # Telegram bot tokens look like this: 113031530:AAH_4c5Gt9gsVu82OVNjUV7poU7PodYiNsA
+  useFirstNameInsteadOfUsername: true
+  commaAfterSenderName: false
   colonAfterSenderName: false
   skipOldMessages: true
-  sendEmojiWithStickers: true
-  token: '601610956:AAGLMi9mzBKKln76FM2H0s7RwK7cV7YYfsg'
+  sendEmojiWithStickers: false
 discord:
+  token: MzgxMDk3OTU1ODc4MjQwMjU2.DX7upA.MJCKONzkx-L5MRv7LIRR2FaAdkw       # Discord bot tokens look like this: MjI3MDA1NzIvOBQ2MzAzMiMz.DRf-aw.N0MVYtDxXYPSQew4g2TPqvQve2c
   skipOldMessages: true
-  token: NDQ4NTAxMTIzOTI2NTg5NDUx.DeXDCQ.AyHzdtsOolo7w18-m87crnIWPUU
-debug: false
 bridges:
   - name: Default bridge
     direction: both
     telegram:
-      chatId: -1001108832871
+      chatId: -1001052152874  # Remember that Telegram group and channel IDs are negative. Include the `-` if you are bridging a group or a channel
       relayJoinMessages: true
       relayLeaveMessages: true
     discord:
-      serverId: '420247736261279745'
-      channelId: '447924016334766086'
+      serverId: '420247736261279745'         # This ID must be wrapped in single quotes. Example: '244791815503347712'
+      channelId: '420247736856739841'       # This ID must be wrapped in single quotes. Example: '244791815503347712'
       relayJoinMessages: true
       relayLeaveMessages: true
+debug: false
