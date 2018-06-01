@@ -1,0 +1,22 @@
+telegram:
+  useFirstNameInsteadOfUsername: false
+  colonAfterSenderName: false
+  skipOldMessages: true
+  sendEmojiWithStickers: true
+  token: '601610956:AAGLMi9mzBKKln76FM2H0s7RwK7cV7YYfsg'
+discord:
+  skipOldMessages: true
+  token: NDQ4NTAxMTIzOTI2NTg5NDUx.DeXDCQ.AyHzdtsOolo7w18-m87crnIWPUU
+debug: false
+bridges:
+  - name: Default bridge
+    direction: both
+    telegram:
+      chatId: -1001108832871
+      relayJoinMessages: true
+      relayLeaveMessages: true
+    discord:
+      serverId: '420247736261279745'
+      channelId: '447924016334766086'
+      relayJoinMessages: true
+      relayLeaveMessages: true
